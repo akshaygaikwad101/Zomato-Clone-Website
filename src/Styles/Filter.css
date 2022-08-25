@@ -1,0 +1,457 @@
+:root {
+    --primary-color: #e23744;
+    --dark-color: #555;
+    --light-color: #fff;
+    --shadow: 15px 15px 20px rgba(0, 0, 0, 0.3), inset 4px 4px 10px gainsboro;
+    --shadow2: 1px 1px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  * {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .collapser {
+    display: none;
+  }
+  .toggle {
+    color: darkgray;
+    display: none;
+  }
+  
+  .bg {
+    background-color: var(--primary-color);
+  }
+  .arrow {
+    font-size: 20px;
+    margin-top: 7px;
+  }
+  .arrow:hover {
+    cursor: pointer;
+    font-size: 25px;
+  }
+  .nav-btn .button {
+    background: transparent;
+    border: none;
+    width: 81px;
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    color: white;
+    cursor: pointer;
+    margin-right: 1.5rem;
+  }
+  
+  .nav-btn .create-account {
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: solid 1px #fff;
+    background: transparent;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  }
+  /* heading */
+  
+  .container > hr {
+    width: 95%;
+    margin-top: 5px;
+  }
+  
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 95%;
+  }
+  .heading > span {
+    font-size: 15px;
+    color: var(--dark-color);
+  }
+  
+  /* Filter Tab */
+  
+  .left-block-heading {
+    color: #192f60;
+    font-size: 20px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .sub-heading {
+    font-size: 13px;
+    color: #192f60;
+    font-weight: 540;
+    margin-top: 6px;
+  }
+  
+  .select {
+    color: #8c96ab;
+    width: 50px;
+    height: 35px;
+    border-radius: 4px;
+    border: solid 1px #8c96ab;
+    border-width: 2px;
+    margin-top: 6px;
+    font-size: 12px;
+  }
+  .checkbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 1.5px;
+    border: solid 1.5px #3a5075;
+  }
+  
+  .cuisine-content {
+    color: #8c96ab;
+    font-family: Poppins;
+    margin: 10px;
+    position: relative;
+    bottom: 3.2px;
+    font-size: small;
+  }
+  
+  .cost-content {
+    color: #8c96ab;
+    font-family: Poppins;
+    margin: 10px;
+    position: relative;
+    bottom: 3.2px;
+    font-size: small;
+  }
+  .wrapper {
+    box-shadow: var(--shadow2);
+    margin-bottom: 15px;
+    width: 95%;
+  }
+  .toggle {
+    margin-top: 10px;
+    margin-right: 20px;
+    float: right;
+  }
+  .filter {
+    height: 570px;
+  }
+  .left-block {
+    margin-left: 20px;
+    line-height: 1.7;
+    padding-top: 15px;
+  }
+  
+  /* Contents */
+  
+  .right-block {
+    height: 560px;
+    width: 95%;
+  }
+  .content1 {
+    box-shadow: var(--shadow2);
+    height: 250px;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  .content2 {
+    box-shadow: var(--shadow);
+    height: 250px;
+    margin-top: 35px;
+    border-radius: 10px;
+  }
+  
+  .content-img {
+    width: 200px;
+    height: 130px;
+  }
+  .content-img img {
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+  }
+  .no-options {
+    padding: 50px;
+    color: #e23744;
+  }
+  .hotel-details {
+    flex: 1;
+    padding-left: 10px;
+    margin-top: 8px;
+  }
+  
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  li {
+    list-style: none;
+    color: var(--dark-color);
+    margin-left: 12px;
+  }
+  .book {
+    flex: 1;
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 20px;
+  }
+  .book input {
+    width: 100px;
+    height: 30px;
+    margin-bottom: 30px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    border: 2px solid #ff523b;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+    background: transparent;
+  }
+  
+  .clearFilter {
+    margin-top: 10px;
+    width: 95%;
+    height: 30px;
+    margin-bottom: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    overflow: hidden;
+    background: #ff523b;
+    outline-width: 0px;
+  }
+  .book input:hover {
+    background: #ff523b;
+    transition: all 0.6s ease;
+    color: white;
+  }
+  .price {
+    color: var(--primary-color);
+  }
+  .hotel-details h3 {
+    color: rgb(12, 12, 50);
+  }
+  .hotel-details p {
+    color: var(--dark-color);
+    margin-bottom: 5px;
+  }
+  .hotel-details small {
+    color: var(--dark-color);
+  }
+  .hotel-details .icons {
+    color: var(--primary-color);
+  }
+  .rating {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .rating > span {
+    margin-right: 7px;
+  }
+  .rating-aggregate {
+    font-size: 7px;
+    color: #555;
+    align-self: flex-end;
+  }
+  .rating-text {
+    font-size: 10px;
+    color: var(--dark-color);
+    margin-left: 10px;
+  }
+  /* Footer */
+  
+  .Footer {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .page {
+    max-width: 412px;
+    display: flex;
+    overflow-x: hidden;
+    margin: 0 15px;
+  }
+  .page > input {
+    min-width: 30px;
+    margin-right: 12px;
+  }
+  .footer-flex {
+    display: flex;
+  }
+  .footer-flex > {
+    min-width: 30px;
+    margin-right: 12px;
+  }
+  .Footer input {
+    overflow-x: hidden;
+    opacity: 0.6;
+    border-radius: 6px;
+    border: solid 1px #8c96ab;
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .Footer input:hover {
+    background-color: gray;
+  }
+  
+  /* Button Hover */
+  
+  .btn1 {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    border: 2px solid #ff523b;
+    padding: 14px 30px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+  }
+  .btn1:hover {
+    background: #ff523b;
+    transition: all 0.6s ease;
+    color: white;
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .content-img {
+      width: 120px;
+      height: 90px;
+    }
+    .hotel-details h3 {
+      font-size: 22px;
+    }
+    .hotel-details p {
+      font-size: 17px;
+    }
+    .hotel-details small {
+      font-size: 13px;
+    }
+    .hotel-details .icons {
+      font-size: 13px;
+    }
+    li {
+      font-size: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 772px) {
+    .toggle {
+      display: initial;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .nav-btn .button {
+      width: 41px;
+      font-size: 12px;
+    }
+    .nav-btn .create-account {
+      padding: 2.5px 10px;
+      border-radius: 2.5px;
+      font-size: 10px;
+    }
+  
+    .heading > span {
+      font-size: 9px;
+    }
+    .hotel-details h3 {
+      font-size: 15px;
+    }
+    .hotel-details p {
+      font-size: 12px;
+    }
+    .hotel-details small {
+      font-size: 10px;
+    }
+    .hotel-details .icons {
+      font-size: 10px;
+    }
+    li {
+      font-size: 8px;
+    }
+  
+    .book input {
+      width: 55px;
+      height: 20px;
+      font-size: 7px;
+    }
+    .right-block {
+      height: 460px;
+    }
+    .footer-flex {
+      display: flex;
+      width: 100%;
+    }
+    .footer-flex > input {
+      width: 20px;
+    }
+    .page > input {
+      margin-right: 2px;
+    }
+    .content1 {
+      box-shadow: var(--shadow);
+      height: 220px;
+    }
+    .content2 {
+      box-shadow: var(--shadow);
+      height: 200px;
+    }
+  
+    .Footer input {
+      margin-left: 11px;
+      opacity: 0.6;
+      border-radius: 4px;
+      border: solid 1px #8c96ab;
+      background-color: #fff;
+      height: 20px;
+      width: 20px;
+      font-size: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  
+    .container {
+      margin-left: 15px !important;
+    }
+    .icon > img {
+      height: 30px;
+      width: 60px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .left-block {
+      position: relative;
+    }
+    .clearFilter {
+      position: absolute;
+      top: 0%;
+  
+      width: 55%;
+    }
+    .sub-heading {
+      margin-top: 32px;
+    }
+    .filter {
+      height: 592px;
+    }
+    .container h1 {
+      font-size: 14px;
+    }
+  }
+  

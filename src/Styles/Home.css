@@ -1,0 +1,335 @@
+:root {
+    --primary-color: #e23744;
+    --dark-color: #555;
+    --light-color: #fff;
+    --shadow: 15px 15px 20px rgba(0, 0, 0, 0.3), inset 4px 4px 10px gainsboro;
+    --shadow2: 1px 1px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  * {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .bg {
+    background-color: var(--primary-color);
+  }
+  .navbar {
+    height: 80px;
+  }
+  .nav-btn .button {
+    top:61%;
+    
+    position: static;
+    background: none;
+    border: solid;
+    border-radius: 1px;
+    width: 80px;
+    font-size: 16px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    color: white;
+    cursor: pointer;
+  
+  }
+  
+  .nav-btn .create-account {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: solid 1px #fff;
+    background: transparent;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    color: white;
+    cursor: pointer;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .icon > img {
+    height: 60px;
+    width: 120px;
+  }
+  
+  .pic {
+    filter: brightness(50%);
+    position: relative;
+    object-fit: cover;
+    height: 500px;
+  }
+  .carousel_image {
+    z-index: -1;
+  }
+  .header {
+    position: absolute;
+    top: 60px;
+    min-height: 500px;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 0;
+  }
+  
+  h2 {
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #777;
+    font-weight: 300;
+  }
+  
+  .item {
+    height: 160px;
+    width: 90%;
+    border: solid 1px #f3efef;
+    margin: 18px 93px 41px 1px;
+    box-shadow: var(--shadow);
+    border-radius: 15px;
+    transition: transform 0.3s ease-in;
+  }
+  
+  .item:hover {
+    transform: translateY(-4px);
+    cursor: pointer;
+  }
+  
+  a {
+    text-decoration: none !important;
+  }
+  
+  .pd {
+    padding-top: 20px;
+  }
+  .pd h5 {
+    color: var(--primary-color);
+  }
+  .container h2 {
+    color: rgb(12, 12, 42);
+  }
+  .logo {
+    background-color: antiquewhite;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 54px;
+    color: red;
+  }
+  
+  .icon > img {
+    height: 60px;
+    width: 120px;
+    cursor: pointer;
+  }
+  
+  .image {
+    width: 100%;
+    height: 159px;
+  }
+  .image img {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 40px;
+  }
+  
+  .image-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .wallpaper-heading {
+    font-size: 50px;
+    color: white;
+  }
+  .search-select {
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  .searchContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .select {
+    height: 50px;
+    width: 216px;
+    border-radius: 30px;
+    text-align: center;
+    outline-width: 0px;
+    cursor: pointer;
+    background-color: white;
+    padding: 0 10px;
+    font-weight: 500;
+    color: black;
+    margin-top: auto;
+  }
+  
+  .search {
+    margin-left: 15px;
+    height: 50px;
+    width: 465px;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .search > i {
+    font-size: 20px;
+    color: darkgray;
+    margin-left: 15px;
+    cursor: pointer;
+    padding-left: 5px;
+  }
+  
+  .search > input {
+    flex: 0.9;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+  }
+  .searchResult {
+    position: absolute;
+    width: 465px;
+    height: auto;
+    max-height: 300px;
+    background-color: white;
+    flex-direction: column;
+    flex: 0 0 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-y: auto;
+    border-radius: 6px;
+    margin-left: 15px;
+    margin-top: 5px;
+    box-shadow: var(--shadow2);
+  }
+  .searchResult::-webkit-scrollbar {
+    display: none;
+  }
+  .searchResult > div {
+    border-bottom: 1px solid gray;
+  }
+  .searchResult > div > p {
+    padding-left: 20px;
+    margin-left: 19px;
+    padding-top: 15px;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+  }
+  .searchResult > div:hover {
+    background-color: gray;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .icon > img {
+      height: 40px;
+      width: 70px;
+    }
+    .searchContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      /* align-items: flex-start; */
+    }
+    .select {
+      height: 30px;
+      width: 180px;
+      border-radius: 30px;
+      font-size: 12px;
+      margin-bottom: 7px;
+      margin-left: 38px;
+    }
+    .search {
+      height: 35px;
+      width: 180px;
+      border-radius: 30px;
+      border-color: white;
+      margin-left: 0px;
+    }
+    .searchResult {
+      margin-left: 0px;
+      width: 180px;
+    }
+    .search > i {
+      font-size: 12px;
+      color: darkgray;
+      padding-left: 5px;
+    }
+  
+    .search > input {
+      width: 90px;
+      padding-left: 2px;
+      padding-bottom: 2px;
+      font-size: 10px;
+    }
+    .searchResult > div > p {
+      font-size: 10px;
+    }
+    ::placeholder {
+      font-size: 9px;
+    }
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .wallpaper-heading {
+      font-size: 30px;
+      color: white;
+    }
+  
+    .select {
+      height: 35px;
+      width: 150px;
+      border-radius: 30px;
+      font-size: 10px;
+    }
+    .search {
+      height: 35px;
+      width: 220px;
+      border-radius: 30px;
+      border-color: white;
+    }
+    .search > i {
+      font-size: 15px;
+      color: darkgray;
+      padding-left: 5px;
+    }
+  
+    .search > input {
+      width: 120px;
+      padding-left: 2px;
+      padding-bottom: 2px;
+      font-size: 13px;
+    }
+    .searchResult > div > p {
+      font-size: 10px;
+      width: 220px;
+    }
+    ::placeholder {
+      font-size: 11px;
+    }
+  }
+  @media only screen and (max-width: 792px) {
+    .wallpaper-heading {
+      font-size: 18px;
+      color: white;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+      display: none !important;
+    }
+  }
+  
